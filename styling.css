@@ -1,0 +1,44 @@
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 0px #999;
+  }
+
+  button:hover {
+    background-color: #3e8e41
+  }
+
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+  }
+
+  @media (max-width: 600px) {
+    button {
+      width: 100%;
+    }
+  }
+
+  .cont{
+    background-color: white;
+    width: 25rem;
+    height: 30rem;
+    border-width: 1rem;
+    padding-block-end: 2rem;
+    margin-top: 5%;
+    margin-left: 40%;
+    color: #04754c;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 0.8rem;
+    border: none;
+    padding: 2rem;
+}
+  

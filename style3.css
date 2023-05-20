@@ -1,0 +1,68 @@
+form {
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+  
+  @media screen and (min-width: 600px) {
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 35px;
+        box-shadow: 0 0px #999;
+      }
+    p{
+        padding: 10px 20px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 35px;
+        box-shadow: 0 0px #999;
+    }
+  }
+  .conta{
+    background-color: white;
+    width: 28rem;
+    height: 34rem;
+    border-width: 1rem;
+    padding-block-end: 2rem;
+    margin-top: 5%;
+    margin-left: 36%;
+    color: #04754c;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 0.8rem;
+    border: none;
+    padding-left: 2rem;
+}
+.cf{
+  background-color: white;
+  width: 25rem;
+  height: 30rem;
+  border-width: 1rem;
+  padding-block-end: 2rem;
+  margin-top: 5%;
+  margin-left: 40%;
+  color: #04754c;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 0.8rem;
+  border: none;
+  padding: 2rem;
+}

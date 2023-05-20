@@ -1,0 +1,198 @@
+Microsoft Windows [Version 10.0.22000.1219]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Anshu1106>mongosh --version
+1.6.1
+
+C:\Users\Anshu1106>mongosh "mongodb+srv://cluster0.matq5fw.mongodb.net/myFirstDatabase" --apiVersion 1 --username mongo
+Enter password: **********
+Current Mongosh Log ID: 63944657b46f6bcb44c97dac
+Connecting to:          mongodb+srv://<credentials>@cluster0.matq5fw.mongodb.net/myFirstDatabase?appName=mongosh+1.6.1
+Using MongoDB:          5.0.14 (API Version 1)
+Using Mongosh:          1.6.1
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+Atlas atlas-rztzyz-shard-0 [primary] myFirstDatabase> use policy_db
+switched to db policy_db
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.createCollection("policies")
+MongoServerError: Collection already exists. NS: policy_db.policies
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.policies.insertOne({
+...   policy_number: "123456",
+...   policy_type: "life insurance",
+...   policy_start_date: ISODate("2022-01-01"),
+...   policy_end_date: ISODate("2023-01-01"),
+...   policy_holder: {
+...     name: "John Doe",
+...     age: 35,
+...     gender: "male"
+...   }
+... })
+{
+  acknowledged: true,
+  insertedId: ObjectId("6394468b6dc1fe9c2f378945")
+}
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.policies.find({ policy_type: "life insurance" })
+[
+  {
+    _id: ObjectId("63944601f9c5bed16155533e"),
+    policy_number: '123456',
+    policy_type: 'life insurance',
+    policy_start_date: ISODate("2022-01-01T00:00:00.000Z"),
+    policy_end_date: ISODate("2023-01-01T00:00:00.000Z"),
+    policy_holder: { name: 'John Doe', age: 35, gender: 'male' }
+  },
+Atlas atlas-rztzyz-shard-0 [primary] policy_db>
+    _id: ObjectId("6394468b6dc1fe9c2f378945"),
+    policy_number: '123456',
+    policy_type: 'life insurance',
+    policy_start_date: ISODate("2022-01-01T00:00:00.000Z"),
+    policy_end_date: ISODate("2023-01-01T00:00:00.000Z"),
+    policy_holder: { name: 'John Doe', age: 35, gender: 'male' }
+  }
+]
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.createCollection("claims")
+{ ok: 1 }
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.claims.insertOne({
+...   claim_number: "123456",
+...   policy_number: "987654",
+...   claim_type: "accident",
+...   claim_date: ISODate("2022-07-15"),
+...   claim_amount: 5000,
+...   claim_status: "pending"
+... })
+{
+  acknowledged: true,
+  insertedId: ObjectId("639446e56dc1fe9c2f378946")
+}
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.claims.find({ claim_type: "accident" })
+[
+  {
+    _id: ObjectId("639446e56dc1fe9c2f378946"),
+    claim_number: '123456',
+    policy_number: '987654',
+    claim_type: 'accident',
+    claim_date: ISODate("2022-07-15T00:00:00.000Z"),
+    claim_amount: 5000,
+    claim_status: 'pending'
+  }
+]
+Atlas atlas-rztzyz-shard-0 [primary] policy_db>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.22000.1219]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Anshu1106>mongosh --version
+1.6.1
+
+C:\Users\Anshu1106>mongosh "mongodb+srv://cluster0.matq5fw.mongodb.net/myFirstDatabase" --apiVersion 1 --username mongo
+Enter password: **********
+Current Mongosh Log ID: 63944657b46f6bcb44c97dac
+Connecting to:          mongodb+srv://<credentials>@cluster0.matq5fw.mongodb.net/myFirstDatabase?appName=mongosh+1.6.1
+Using MongoDB:          5.0.14 (API Version 1)
+Using Mongosh:          1.6.1
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+Atlas atlas-rztzyz-shard-0 [primary] myFirstDatabase> use policy_db
+switched to db policy_db
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.createCollection("policies")
+MongoServerError: Collection already exists. NS: policy_db.policies
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.policies.insertOne({
+...   policy_number: "123456",
+...   policy_type: "life insurance",
+...   policy_start_date: ISODate("2022-01-01"),
+...   policy_end_date: ISODate("2023-01-01"),
+...   policy_holder: {
+...     name: "John Doe",
+...     age: 35,
+...     gender: "male"
+...   }
+... })
+{
+  acknowledged: true,
+  insertedId: ObjectId("6394468b6dc1fe9c2f378945")
+}
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.policies.find({ policy_type: "life insurance" })
+[
+  {
+    _id: ObjectId("63944601f9c5bed16155533e"),
+    policy_number: '123456',
+    policy_type: 'life insurance',
+    policy_start_date: ISODate("2022-01-01T00:00:00.000Z"),
+    policy_end_date: ISODate("2023-01-01T00:00:00.000Z"),
+    policy_holder: { name: 'John Doe', age: 35, gender: 'male' }
+  },
+Atlas atlas-rztzyz-shard-0 [primary] policy_db>
+    _id: ObjectId("6394468b6dc1fe9c2f378945"),
+    policy_number: '123456',
+    policy_type: 'life insurance',
+    policy_start_date: ISODate("2022-01-01T00:00:00.000Z"),
+    policy_end_date: ISODate("2023-01-01T00:00:00.000Z"),
+    policy_holder: { name: 'John Doe', age: 35, gender: 'male' }
+  }
+]
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.createCollection("claims")
+{ ok: 1 }
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.claims.insertOne({
+...   claim_number: "123456",
+...   policy_number: "987654",
+...   claim_type: "accident",
+...   claim_date: ISODate("2022-07-15"),
+...   claim_amount: 5000,
+...   claim_status: "pending"
+... })
+{
+  acknowledged: true,
+  insertedId: ObjectId("639446e56dc1fe9c2f378946")
+}
+Atlas atlas-rztzyz-shard-0 [primary] policy_db> db.claims.find({ claim_type: "accident" })
+[
+  {
+    _id: ObjectId("639446e56dc1fe9c2f378946"),
+    claim_number: '123456',
+    policy_number: '987654',
+    claim_type: 'accident',
+    claim_date: ISODate("2022-07-15T00:00:00.000Z"),
+    claim_amount: 5000,
+    claim_status: 'pending'
+  }
+]
+Atlas atlas-rztzyz-shard-0 [primary] policy_db>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

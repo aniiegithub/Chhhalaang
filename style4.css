@@ -1,0 +1,30 @@
+table {
+    width: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+  }
+  .current-day {
+    background-color: #ccc;
+  }
+  p1{
+   
+    font-size: 22px;
+    text-align: center;
+    font-style: bold;
+
+    
+   
+}
+.p{
+
+    font-size: 14px;
+    text-align: center;
+}
+  
+    
